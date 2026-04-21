@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rutas Absolutas y Relativas en HTML5</title>
+</head>
+
+<body>
+   <!-- Contenido del cuerpo del documento HTML -->
+   <header>
+      <!-- Cabecera del documento -->
+      <h1>Rutas Absolutas y Relativas en HTML5</h1>
+   </header>
+   <nav>
+      <!-- Barra de navegación -->
+   </nav>
+   <section>
+      <!-- Sección de contenido principal (aca va la image1.jpg)-->
+      <h2>Introducción a las Rutas en HTML</h2>
+      <p>Al desarrollar páginas web, es fundamental entender cómo enlazar recursos como imágenes, hojas de estilo o
+         scripts. Las rutas pueden ser <strong>absolutas</strong> o <strong>relativas</strong>. Aquí mostramos una
+         imagen apuntando al directorio superior usando ../:</p>
+      <img src="../image1.jpg" alt="Ejemplo de ruta relativa al directorio padre" width="400">
+   </section>
+   <article>
+      <!-- Artículo o contenido independiente (aca va la image2.jpg)-->
+      <h2>Rutas Relativas</h2>
+      <p>Una ruta relativa apunta a un archivo en relación con la ubicación actual del documento HTML. Por ejemplo, si
+         una imagen se encuentra en la misma carpeta, simplemente se usa su nombre como ruta. A continuación, vemos una
+         imagen ubicada en el mismo directorio:</p>
+      <img src="image2.jpg" alt="Ejemplo de ruta en el mismo directorio" width="400">
+   </article>
+   <aside>
+      <!-- Contenido relacionado o complementario al contenido principal(aca va la image3.jpg) -->
+      <h3>Rutas a Subdirectorios</h3>
+      <p>Para acceder a un archivo dentro de una subcarpeta desde el directorio actual, debemos especificar el nombre de
+         la carpeta seguido de una barra (/) y el nombre del archivo. Esta imagen está en el directorio
+         Assets:
+      </p>
+      <img src="Assets/image3.jpg" alt="Ejemplo de subdirectorio" width="400">
+   </aside>
+   <footer>
+      <!-- Pie de página (aca va la image4.jpg)-->
+      <p><b>Rutas Anidadas y Conclusión</b>: Podemos anidar directorios tantas veces como sea necesario. Las rutas
+         relativas facilitan la portabilidad del proyecto, permitiendo mover toda la carpeta base sin romper los
+         enlaces, siempre que se mantenga la estructura interna. Esta última imagen está en Assets/extras:
+      </p>
+      <img src="Assets/extras/image4.jpg" alt="Ejemplo de subdirectorio anidado" width="400">
+   </footer>
+</body>
+
+</html>
