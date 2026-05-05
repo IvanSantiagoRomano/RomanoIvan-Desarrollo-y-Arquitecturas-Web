@@ -1,0 +1,46 @@
+/* Estilos generales */
+body {
+    padding-top: 56px; /* Para compensar la navbar fixed-top */
+}
+ 
+section {
+    padding: 60px 0;
+}
+ 
+/* Variables CSS - Personalización Avanzada */
+:root {
+    --primary-purple: #6f42c1;
+}
+
+/* Colores personalizados usando variables */
+.bg-purple {
+    background-color: var(--primary-purple);
+}
+ 
+.text-purple {
+    color: var(--primary-purple);
+}
+ 
+/* Estilos para la sección de inicio */
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+ 
+/* Animación para las tarjetas de habilidades */
+.card {
+    transition: transform 0.3s ease;
+}
+ 
+.card:hover {
+    transform: translateY(-10px);
+}
+ 
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #inicio {
+        min-height: auto;
+        padding-top: 2rem;
+    }
+}
